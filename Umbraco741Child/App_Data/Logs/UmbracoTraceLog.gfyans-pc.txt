@@ -1836,3 +1836,543 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
    at System.Threading.TimerQueueTimer.Fire()
    at System.Threading.TimerQueue.FireNextTimers()
    at System.Threading.TimerQueue.AppDomainTimerCallback()
+ 2016-02-19 12:28:57,365 [P10748/D8/T30] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GFYANS-PC
+ 2016-02-19 12:28:57,393 [P10748/D8/T30] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:28:57,414 [P10748/D8/T30] INFO  Umbraco.Core.PluginManager - Hash determined (took 20ms)
+ 2016-02-19 12:28:57,462 [P10748/D8/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:28:57,628 [P10748/D8/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 166ms)
+ 2016-02-19 12:28:57,628 [P10748/D8/T30] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Reflection.ReflectionTypeLoadException: Could not load types from assembly umbraco.DataLayer, Version=1.0.5750.18159, Culture=neutral, PublicKeyToken=null, errors:
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies, Boolean onlyConcreteClasses)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies)
+   at Umbraco.Core.PluginManager.<>c__DisplayClass3d`1.<ResolveTypes>b__3c()
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Boolean cacheResult, IEnumerable`1 specificAssemblies)
+   at Umbraco.Core.PluginManager.ResolveApplicationStartupHandlers()
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize()
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e)
+   at Umbraco.Core.UmbracoApplicationBase.Application_Start(Object sender, EventArgs e)
+ 2016-02-19 12:29:08,905 [P10748/D9/T30] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GFYANS-PC
+ 2016-02-19 12:29:08,987 [P10748/D9/T30] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:29:08,994 [P10748/D9/T30] INFO  Umbraco.Core.PluginManager - Hash determined (took 6ms)
+ 2016-02-19 12:29:09,026 [P10748/D9/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:29:11,311 [P10748/D9/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 2285ms)
+ 2016-02-19 12:29:11,312 [P10748/D9/T30] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Reflection.ReflectionTypeLoadException: Could not load types from assembly Umbraco.ModelsBuilder, Version=3.0.0.90, Culture=neutral, PublicKeyToken=null, errors:
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Editors.EditorValidator`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Editors.EditorValidator`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Editors.EditorValidator`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Editors.EditorValidator`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Models.ContentEditing.ContentTypeSave`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Models.ContentEditing.ContentTypeSave`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+Exception: System.TypeLoadException: Could not load type 'Umbraco.Web.Models.ContentEditing.ContentTypeSave`1' from assembly 'umbraco, Version=1.0.5750.18164, Culture=neutral, PublicKeyToken=null'.
+
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies, Boolean onlyConcreteClasses)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies)
+   at Umbraco.Core.PluginManager.<>c__DisplayClass3d`1.<ResolveTypes>b__3c()
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Boolean cacheResult, IEnumerable`1 specificAssemblies)
+   at Umbraco.Core.PluginManager.ResolveApplicationStartupHandlers()
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize()
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e)
+   at Umbraco.Core.UmbracoApplicationBase.Application_Start(Object sender, EventArgs e)
+ 2016-02-19 12:29:32,759 [P10748/D10/T30] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.1 application starting on GFYANS-PC
+ 2016-02-19 12:29:32,780 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:29:32,788 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2016-02-19 12:29:32,827 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:29:33,064 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 238ms)
+ 2016-02-19 12:29:33,075 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-02-19 12:29:33,082 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+ 2016-02-19 12:29:33,083 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-02-19 12:29:33,092 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 9ms)
+ 2016-02-19 12:29:33,102 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-02-19 12:29:33,109 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+ 2016-02-19 12:29:33,109 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-02-19 12:29:33,128 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 18ms)
+ 2016-02-19 12:29:33,150 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-02-19 12:29:33,157 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2016-02-19 12:29:33,157 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-02-19 12:29:33,164 [P10748/D10/T30] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 6ms)
+ 2016-02-19 12:29:33,812 [P10748/D10/T30] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:29:33,954 [P10748/D10/T30] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:29:33,961 [P10748/D10/T30] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:29:33,973 [P10748/D10/T30] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-02-19 12:29:33,981 [P10748/D10/T30] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-02-19 12:29:34,018 [P10748/D10/T30] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-02-19 12:29:34,026 [P10748/D10/T30] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1321ms)
+ 2016-02-19 12:29:34,762 [P10748/D10/T81] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:14498/umbraco (UmbracoModule request)
+ 2016-02-19 12:29:37,806 [P10748/D8/T93] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: InitializationError
+
+_shutDownMessage=Initialization Error
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.AppDomainShutdownTimerCallback(Object state)
+   at System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.TimerQueueTimer.CallCallback()
+   at System.Threading.TimerQueueTimer.Fire()
+   at System.Threading.TimerQueue.FireNextTimers()
+   at System.Threading.TimerQueue.AppDomainTimerCallback()
+ 2016-02-19 12:29:37,934 [P10748/D10/T85] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-02-19 12:29:37,952 [P10748/D10/T85] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 17ms)
+ 2016-02-19 12:29:39,181 [P10748/D10/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-02-19 12:29:39,204 [P10748/D10/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 23ms)
+ 2016-02-19 12:29:39,302 [P10748/D10/T84] ERROR Umbraco.Core.Sync.DatabaseServerMessenger - DISTRIBUTED CACHE IS NOT UPDATED. Failed to execute instructions (19: "[{"RefreshType":4,"RefresherId":"74318b85-f97d-49af-ba15-caf9e0ba4d5a","GuidId":"00000000-0000-0000-0000-000000000000","IntId":0,"JsonIds":null,"JsonPayload":"{\"name\":\"Test3\",\"created\":\"2016-02-19T12:14:09.6934182+00:00\",\"pages\":[{\"fieldSets\":[{\"caption\":null,\"sortOrder\":0,\"id\":\"6fe12da1-62eb-4ac9-889d-f0908b03956b\",\"page\":\"00000000-0000-0000-0000-000000000000\",\"containers\":[{\"caption\":null,\"width\":12,\"fields\":[{\"caption\":\"Test3\",\"tooltip\":null,\"placeholder\":null,\"cssClass\":null,\"alias\":\"test3\",\"id\":\"dcc15adc-6acd-4bd3-8c8a-3b10e535d20a\",\"fieldTypeId\":\"3f92e01b-29e2-4a30-bf33-9df5580ed52c\",\"prevalueSourceId\":\"00000000-0000-0000-0000-000000000000\",\"dataSourceFieldKey\":null,\"mandatory\":false,\"regex\":null,\"requiredErrorMessage\":null,\"invalidErrorMessage\":null,\"condition\":null,\"settings\":{\"DefaultValue\":\"\"},\"preValues\":[]}]}],\"condition\":null}],\"caption\":\"Test3\",\"sortOrder\":0,\"id\":\"00000000-0000-0000-0000-000000000000\",\"form\":\"00000000-0000-0000-0000-000000000000\"}],\"id\":\"1f0e2cae-a447-4e9e-aca9-b043469101c9\",\"fieldIndicationType\":\"MarkMandatoryFields\",\"indicator\":\"*\",\"showValidationSummary\":false,\"hideFieldValidation\":false,\"requiredErrorMessage\":\"Please provide a value for {0}\",\"invalidErrorMessage\":\"Please provide a valid value for {0}\",\"messageOnSubmit\":\"Thank you\",\"goToPageOnSubmit\":0,\"xPathOnSubmit\":null,\"manualApproval\":false,\"storeRecordsLocally\":true,\"cssClass\":null,\"disableDefaultStylesheet\":false,\"useClientDependency\":false,\"workflows\":[\"16a69c17-a931-49ee-a5aa-a9fff0aad410\"],\"datasource\":null,\"submitLabel\":\"Submit\",\"nextLabel\":\"Next\",\"prevLabel\":\"Previous\"}"},{"RefreshType":4,"RefresherId":"61596c60-e2eb-4ea8-8282-5de564a395b8","GuidId":"00000000-0000-0000-0000-000000000000","IntId":0,"JsonIds":null,"JsonPayload":"{\"id\":\"16a69c17-a931-49ee-a5aa-a9fff0aad410\",\"name\":\"Send email to test@test.com when submitted\",\"form\":\"1f0e2cae-a447-4e9e-aca9-b043469101c9\",\"active\":true,\"workflowTypeId\":\"e96badd7-05be-4978-b8d9-b3d733de70a5\",\"executesOn\":\"Submitted\",\"settings\":{\"Email\":\"test@test.com\",\"Subject\":\"the form Test3 was submitted\",\"Message\":\"the form Test3 was submitted, this is the list of values it contained, you can turn this email off under workflows in Umbraco Contour\"},\"sortOrder\":0}"},{"RefreshType":4,"RefresherId":"74318b85-f97d-49af-ba15-caf9e0ba4d5a","GuidId":"00000000-0000-0000-0000-000000000000","IntId":0,"JsonIds":null,"JsonPayload":"{\"name\":\"Test3\",\"created\":\"2016-02-19T12:14:09.6934182+00:00\",\"pages\":[{\"fieldSets\":[{\"caption\":null,\"sortOrder\":0,\"id\":\"6fe12da1-62eb-4ac9-889d-f0908b03956b\",\"page\":\"00000000-0000-0000-0000-000000000000\",\"containers\":[{\"caption\":null,\"width\":12,\"fields\":[{\"caption\":\"Test3\",\"tooltip\":null,\"placeholder\":null,\"cssClass\":null,\"alias\":\"test3\",\"id\":\"dcc15adc-6acd-4bd3-8c8a-3b10e535d20a\",\"fieldTypeId\":\"3f92e01b-29e2-4a30-bf33-9df5580ed52c\",\"prevalueSourceId\":\"00000000-0000-0000-0000-000000000000\",\"dataSourceFieldKey\":null,\"mandatory\":false,\"regex\":null,\"requiredErrorMessage\":null,\"invalidErrorMessage\":null,\"condition\":null,\"settings\":{\"DefaultValue\":\"\"},\"preValues\":[]}]}],\"condition\":null}],\"caption\":\"Test3\",\"sortOrder\":0,\"id\":\"00000000-0000-0000-0000-000000000000\",\"form\":\"00000000-0000-0000-0000-000000000000\"}],\"id\":\"1f0e2cae-a447-4e9e-aca9-b043469101c9\",\"fieldIndicationType\":\"MarkMandatoryFields\",\"indicator\":\"*\",\"showValidationSummary\":false,\"hideFieldValidation\":false,\"requiredErrorMessage\":\"Please provide a value for {0}\",\"invalidErrorMessage\":\"Please provide a valid value for {0}\",\"messageOnSubmit\":\"Thank you\",\"goToPageOnSubmit\":0,\"xPathOnSubmit\":null,\"manualApproval\":false,\"storeRecordsLocally\":true,\"cssClass\":null,\"disableDefaultStylesheet\":false,\"useClientDependency\":false,\"workflows\":[\"16a69c17-a931-49ee-a5aa-a9fff0aad410\"],\"datasource\":null,\"submitLabel\":\"Submit\",\"nextLabel\":\"Next\",\"prevLabel\":\"Previous\"}"}]"). Instruction is being skipped/ignored
+System.NotImplementedException: The method or operation is not implemented.
+   at CacheRefreshersForForms.FormsWorkflowCacheRefresher.Deserialize(String json) in D:\Projects\_OpenSource\CacheRefreshersForForms\CacheRefreshersForForms\FormsWorkflowCacheRefresher.cs:line 23
+   at Umbraco.Core.Cache.PayloadCacheRefresherBase`1.Refresh(String json)
+   at Umbraco.Core.Sync.DatabaseServerMessenger.RefreshByJson(Guid uniqueIdentifier, String jsonPayload)
+   at Umbraco.Core.Sync.DatabaseServerMessenger.NotifyRefreshers(IEnumerable`1 jsonArray)
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+ 2016-02-19 12:29:39,531 [P10748/D10/T88] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:29:39,541 [P10748/D10/T88] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 9ms)
+ 2016-02-19 12:29:39,560 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-19 12:29:39,572 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 11ms)
+ 2016-02-19 12:29:39,583 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:29:39,583 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-02-19 12:29:39,585 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-19 12:29:39,598 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 12ms)
+ 2016-02-19 12:29:39,611 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-02-19 12:29:39,643 [P10748/D10/T76] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 32ms)
+ 2016-02-19 12:29:51,513 [P10748/D9/T93] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: InitializationError
+
+_shutDownMessage=Initialization Error
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.AppDomainShutdownTimerCallback(Object state)
+   at System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.TimerQueueTimer.CallCallback()
+   at System.Threading.TimerQueueTimer.Fire()
+   at System.Threading.TimerQueue.FireNextTimers()
+   at System.Threading.TimerQueue.AppDomainTimerCallback()
+ 2016-02-19 12:29:56,920 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-02-19 12:29:56,920 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-02-19 12:29:56,921 [P10748/D10/T91] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-02-19 12:29:56,969 [P10748/D10/T84] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-02-19 12:29:56,969 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-02-19 12:29:56,970 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-02-19 12:29:56,970 [P10748/D10/T93] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-02-19 12:29:56,970 [P10748/D10/T85] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-02-19 12:29:56,970 [P10748/D10/T85] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-02-19 12:29:56,970 [P10748/D10/T89] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-02-19 12:30:16,987 [P10748/D11/T63] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GFYANS-PC
+ 2016-02-19 12:30:17,013 [P10748/D11/T63] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:30:17,023 [P10748/D11/T63] INFO  Umbraco.Core.PluginManager - Hash determined (took 9ms)
+ 2016-02-19 12:30:17,065 [P10748/D11/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:30:17,185 [P10748/D11/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 119ms)
+ 2016-02-19 12:30:17,185 [P10748/D11/T63] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Reflection.ReflectionTypeLoadException: Could not load types from assembly umbraco.DataLayer, Version=1.0.5750.18159, Culture=neutral, PublicKeyToken=null, errors:
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Exception: System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies, Boolean onlyConcreteClasses)
+   at Umbraco.Core.TypeFinder.FindClassesOfType[T](IEnumerable`1 assemblies)
+   at Umbraco.Core.PluginManager.<>c__DisplayClass3d`1.<ResolveTypes>b__3c()
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult)
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Boolean cacheResult, IEnumerable`1 specificAssemblies)
+   at Umbraco.Core.PluginManager.ResolveApplicationStartupHandlers()
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize()
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e)
+   at Umbraco.Core.UmbracoApplicationBase.Application_Start(Object sender, EventArgs e)
+ 2016-02-19 12:30:26,981 [P10748/D10/T75] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\8111edfd\93443072\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-02-19 12:30:57,361 [P10748/D11/T88] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: InitializationError
+
+_shutDownMessage=Initialization Error
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.AppDomainShutdownTimerCallback(Object state)
+   at System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.TimerQueueTimer.CallCallback()
+   at System.Threading.TimerQueueTimer.Fire()
+   at System.Threading.TimerQueue.FireNextTimers()
+   at System.Threading.TimerQueue.AppDomainTimerCallback()
+ 2016-02-19 12:31:46,207 [P10748/D12/T32] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.1 application starting on GFYANS-PC
+ 2016-02-19 12:31:46,231 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:31:46,239 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2016-02-19 12:31:46,284 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:31:46,543 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 259ms)
+ 2016-02-19 12:31:46,557 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-02-19 12:31:46,565 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 7ms)
+ 2016-02-19 12:31:46,566 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-02-19 12:31:46,572 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 6ms)
+ 2016-02-19 12:31:46,583 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-02-19 12:31:46,591 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 7ms)
+ 2016-02-19 12:31:46,591 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-02-19 12:31:46,607 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 15ms)
+ 2016-02-19 12:31:46,634 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-02-19 12:31:46,640 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2016-02-19 12:31:46,641 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-02-19 12:31:46,649 [P10748/D12/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 8ms)
+ 2016-02-19 12:31:47,311 [P10748/D12/T32] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:31:47,430 [P10748/D12/T32] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:31:47,432 [P10748/D12/T32] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:31:47,444 [P10748/D12/T32] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-02-19 12:31:47,454 [P10748/D12/T32] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-02-19 12:31:47,503 [P10748/D12/T32] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-02-19 12:31:47,516 [P10748/D12/T32] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1357ms)
+ 2016-02-19 12:31:48,261 [P10748/D12/T85] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:14498/umbraco (UmbracoModule request)
+ 2016-02-19 12:31:50,290 [P10748/D12/T78] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-02-19 12:31:50,304 [P10748/D12/T78] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 14ms)
+ 2016-02-19 12:31:51,491 [P10748/D12/T65] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:31:51,503 [P10748/D12/T65] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 11ms)
+ 2016-02-19 12:31:51,597 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-19 12:31:51,613 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 14ms)
+ 2016-02-19 12:31:51,624 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:31:51,624 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-02-19 12:31:51,626 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-19 12:31:51,640 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 13ms)
+ 2016-02-19 12:31:51,653 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-02-19 12:31:51,666 [P10748/D12/T75] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 12ms)
+ 2016-02-19 12:32:02,747 [P10748/D12/T65] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-02-19 12:32:02,767 [P10748/D12/T65] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 20ms)
+ 2016-02-19 12:32:03,564 [P10748/D12/T66] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:32:03,564 [P10748/D12/T66] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-02-19 12:32:32,647 [P10748/D12/T96] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-19 12:32:32,647 [P10748/D12/T96] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-02-19 12:33:26,493 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-02-19 12:33:26,493 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-02-19 12:33:26,493 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-02-19 12:33:26,494 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-02-19 12:33:26,494 [P10748/D12/T72] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-02-19 12:33:26,494 [P10748/D12/T81] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-02-19 12:33:26,560 [P10748/D12/T87] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-02-19 12:33:26,560 [P10748/D12/T82] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-02-19 12:33:26,560 [P10748/D12/T91] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-02-19 12:33:26,561 [P10748/D12/T96] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-02-19 12:33:48,612 [P10748/D13/T63] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.1 application starting on GFYANS-PC
+ 2016-02-19 12:33:48,632 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-02-19 12:33:48,640 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2016-02-19 12:33:48,688 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-02-19 12:33:48,910 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 221ms)
+ 2016-02-19 12:33:48,918 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-02-19 12:33:48,925 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+ 2016-02-19 12:33:48,925 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-02-19 12:33:48,932 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 7ms)
+ 2016-02-19 12:33:48,942 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-02-19 12:33:48,948 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 6ms)
+ 2016-02-19 12:33:48,948 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-02-19 12:33:48,963 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 14ms)
+ 2016-02-19 12:33:48,984 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-02-19 12:33:48,991 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2016-02-19 12:33:48,991 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-02-19 12:33:49,000 [P10748/D13/T63] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 8ms)
+ 2016-02-19 12:33:49,647 [P10748/D13/T63] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:33:49,796 [P10748/D13/T63] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:33:49,798 [P10748/D13/T63] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-02-19 12:33:49,822 [P10748/D13/T63] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-02-19 12:33:49,835 [P10748/D13/T63] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-02-19 12:33:49,884 [P10748/D13/T63] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-02-19 12:33:49,898 [P10748/D13/T63] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1338ms)
+ 2016-02-19 12:33:50,737 [P10748/D13/T89] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:14498/umbraco (UmbracoModule request)
