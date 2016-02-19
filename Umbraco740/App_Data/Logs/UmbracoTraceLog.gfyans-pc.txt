@@ -1806,3 +1806,6 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2016-02-19 12:20:54,386 [P4844/D7/T151] INFO  umbraco.content - Loaded Xml from file.
  2016-02-19 12:20:54,703 [P4844/D7/T151] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
  2016-02-19 12:20:54,724 [P4844/D7/T151] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 21ms)
+ 2016-02-19 12:21:54,605 [P4844/D7/T120] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-02-18 12:21:54
+ 2016-02-19 12:21:54,627 [P4844/D7/T111] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-02-19 12:21:54,642 [P4844/D7/T111] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 14ms)
