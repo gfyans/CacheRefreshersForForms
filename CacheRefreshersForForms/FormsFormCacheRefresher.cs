@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Web.Script.Serialization;
 using Umbraco.Core.Cache;
 using Umbraco.Core.IO;
 using Umbraco.Forms.Core;
@@ -20,7 +21,7 @@ namespace CacheRefreshersForForms
 
         protected override object Deserialize(string json)
         {
-            throw new NotImplementedException();
+            return new JavaScriptSerializer().Deserialize<Form>(json);
         }
 
         public override void Refresh(object payload)

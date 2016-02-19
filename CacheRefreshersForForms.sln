@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheRefreshersForForms", "CacheRefreshersForForms\CacheRefreshersForForms.csproj", "{BAFAABAF-5EF5-4F1F-81C9-413F54C572B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco741", "Umbraco740\Umbraco741.csproj", "{2E85EED2-238A-4CA6-B50E-60DAA9A2B218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco741Child", "Umbraco741Child\Umbraco741Child.csproj", "{16EB65F9-9B3B-4806-A900-0BB6EEFE7439}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BAFAABAF-5EF5-4F1F-81C9-413F54C572B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAFAABAF-5EF5-4F1F-81C9-413F54C572B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAFAABAF-5EF5-4F1F-81C9-413F54C572B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E85EED2-238A-4CA6-B50E-60DAA9A2B218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E85EED2-238A-4CA6-B50E-60DAA9A2B218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E85EED2-238A-4CA6-B50E-60DAA9A2B218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E85EED2-238A-4CA6-B50E-60DAA9A2B218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EB65F9-9B3B-4806-A900-0BB6EEFE7439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EB65F9-9B3B-4806-A900-0BB6EEFE7439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EB65F9-9B3B-4806-A900-0BB6EEFE7439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EB65F9-9B3B-4806-A900-0BB6EEFE7439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
