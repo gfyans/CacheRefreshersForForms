@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Web.Script.Serialization;
 using Umbraco.Core.Cache;
 using Umbraco.Core.IO;
 using Umbraco.Forms.Core;
@@ -20,24 +21,26 @@ namespace CacheRefreshersForForms
 
         protected override object Deserialize(string json)
         {
-            throw new NotImplementedException();
+            return new JavaScriptSerializer().Deserialize<Workflow>(json);
         }
 
         public override void Refresh(object payload)
         {
             Workflow workflow = (Workflow)payload;
 
-            string path = this.Find(workflow.Id.ToString());
+            workflow.Active = true;
 
-            if (path != null)
+            _fileStorage.SaveToFile(workflow, workflow.Id, "");
+            
+            using (FormStorage formStorage = new FormStorage())
             {
-                _fileStorage.SaveToSpecificPath(workflow, workflow.Id.ToString(), path);
-            }
-            else
-            {
-                _fileStorage.SaveToFile(workflow, workflow.Id, this.RootFolderPath());
-            }
+                Form form = formStorage.GetForm(workflow.Form);
 
+                form.WorkflowIds.Add(workflow.Id);
+
+                formStorage.UpdateForm(form, "");
+            }
+            
             base.Refresh(payload);
         }
 

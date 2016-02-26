@@ -17,7 +17,7 @@
     <RootNamespace>Umbraco741</RootNamespace>
     <AssemblyName>Umbraco741</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -423,7 +423,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>14384</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:14287/</IISUrl>
+          <IISUrl>http://cacherefreshersforforms1.local</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

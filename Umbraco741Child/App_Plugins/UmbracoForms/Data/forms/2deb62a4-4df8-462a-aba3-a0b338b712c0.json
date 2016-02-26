@@ -1,13 +1,13 @@
 {
-  "name": "Test3",
-  "created": "2016-02-19T12:14:09.6934182+00:00",
+  "name": "Test 1",
+  "created": "2016-02-26T14:54:53.3688704+00:00",
   "pages": [
     {
       "fieldSets": [
         {
           "caption": null,
           "sortOrder": 0,
-          "id": "6fe12da1-62eb-4ac9-889d-f0908b03956b",
+          "id": "c6784486-621f-4afb-a4fa-678140fba248",
           "page": "00000000-0000-0000-0000-000000000000",
           "containers": [
             {
@@ -15,13 +15,33 @@
               "width": 12,
               "fields": [
                 {
-                  "caption": "Test3",
+                  "caption": "Test",
                   "tooltip": null,
                   "placeholder": null,
                   "cssClass": null,
-                  "alias": "test3",
-                  "id": "dcc15adc-6acd-4bd3-8c8a-3b10e535d20a",
+                  "alias": "test1",
+                  "id": "bc6ff21c-b57a-49fa-8af1-bfa25c9d36c9",
                   "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Textarea field",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "textareaField",
+                  "id": "2e4c0845-e3c7-47f5-a145-653f8b4f67a8",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
                   "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
                   "dataSourceFieldKey": null,
                   "mandatory": false,
@@ -40,13 +60,13 @@
           "condition": null
         }
       ],
-      "caption": "Test3",
+      "caption": "Test",
       "sortOrder": 0,
       "id": "00000000-0000-0000-0000-000000000000",
       "form": "00000000-0000-0000-0000-000000000000"
     }
   ],
-  "id": "1f0e2cae-a447-4e9e-aca9-b043469101c9",
+  "id": "2deb62a4-4df8-462a-aba3-a0b338b712c0",
   "fieldIndicationType": "MarkMandatoryFields",
   "indicator": "*",
   "showValidationSummary": false,

@@ -1,13 +1,13 @@
 {
-  "name": "Test2",
-  "created": "2016-02-19T12:04:06.1062189+00:00",
+  "name": "Test 2",
+  "created": "2016-02-26T15:02:41.5976225+00:00",
   "pages": [
     {
       "fieldSets": [
         {
           "caption": null,
           "sortOrder": 0,
-          "id": "590487b5-c03c-4d8c-8b5a-b98d6e657cdb",
+          "id": "599dc5ba-d51b-42f6-a69a-fe8fce5f9a06",
           "page": "00000000-0000-0000-0000-000000000000",
           "containers": [
             {
@@ -15,12 +15,12 @@
               "width": 12,
               "fields": [
                 {
-                  "caption": "Test2",
+                  "caption": "Test 2",
                   "tooltip": null,
                   "placeholder": null,
                   "cssClass": null,
                   "alias": "test2",
-                  "id": "d40c4a7d-0b76-43a9-dcdd-002726c4de4e",
+                  "id": "5f2984c3-e430-4501-e8af-8859beb06fe4",
                   "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
                   "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
                   "dataSourceFieldKey": null,
@@ -40,13 +40,13 @@
           "condition": null
         }
       ],
-      "caption": "Test2",
+      "caption": "Test 2",
       "sortOrder": 0,
       "id": "00000000-0000-0000-0000-000000000000",
       "form": "00000000-0000-0000-0000-000000000000"
     }
   ],
-  "id": "0673c674-d6e9-46df-ad8a-507e51e2222d",
+  "id": "74903e2e-b46c-464f-bc59-befd5e665290",
   "fieldIndicationType": "MarkMandatoryFields",
   "indicator": "*",
   "showValidationSummary": false,

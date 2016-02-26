@@ -11,30 +11,24 @@ namespace CacheRefreshersForForms
         protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             FormStorage.Saved += FormStorageOnSaved;
-            FormStorage.Created += FormStorageOnCreated;
 
             DataSourceStorage.Saved += DataSourceStorageOnSaved;
-            DataSourceStorage.Created += DataSourceStorageOnCreated;
+            //DataSourceStorage.Created += DataSourceStorageOnCreated;
 
             PrevalueSourceStorage.Saved += PrevalueSourceStorageOnSaved;
-            PrevalueSourceStorage.Created += PrevalueSourceStorageOnCreated;
+            //PrevalueSourceStorage.Created += PrevalueSourceStorageOnCreated;
 
             WorkflowStorage.Saved += WorkflowStorageOnSaved;
             WorkflowStorage.Created += WorkflowStorageOnCreated;
         }
 
         #region Form
-
-        private void FormStorageOnCreated(object sender, FormEventArgs formEventArgs)
-        {
-            DistributedCache.Instance.RefreshFormsCache(formEventArgs.Form);
-        }
-
+        
         private void FormStorageOnSaved(object sender, FormEventArgs formEventArgs)
         {
             DistributedCache.Instance.RefreshFormsCache(formEventArgs.Form);
         }
-        
+
         #endregion
 
         #region Workflow
