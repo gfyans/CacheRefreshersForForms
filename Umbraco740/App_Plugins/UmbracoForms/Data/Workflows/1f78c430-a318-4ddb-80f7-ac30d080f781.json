@@ -1,0 +1,15 @@
+{
+  "id": "1f78c430-a318-4ddb-80f7-ac30d080f781",
+  "name": "greg@blackred.co.uk",
+  "form": "2deb62a4-4df8-462a-aba3-a0b338b712c0",
+  "active": true,
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "greg@blackred.co.uk",
+    "SenderEmail": "greg@blackred.co.uk",
+    "Subject": "greg@blackred.co.uk",
+    "Message": "greg@blackred.co.uk"
+  },
+  "sortOrder": 0
+}

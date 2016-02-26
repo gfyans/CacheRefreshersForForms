@@ -13,10 +13,10 @@ namespace CacheRefreshersForForms
             FormStorage.Saved += FormStorageOnSaved;
 
             DataSourceStorage.Saved += DataSourceStorageOnSaved;
-            //DataSourceStorage.Created += DataSourceStorageOnCreated;
+            DataSourceStorage.Created += DataSourceStorageOnCreated;
 
             PrevalueSourceStorage.Saved += PrevalueSourceStorageOnSaved;
-            //PrevalueSourceStorage.Created += PrevalueSourceStorageOnCreated;
+            PrevalueSourceStorage.Created += PrevalueSourceStorageOnCreated;
 
             WorkflowStorage.Saved += WorkflowStorageOnSaved;
             WorkflowStorage.Created += WorkflowStorageOnCreated;

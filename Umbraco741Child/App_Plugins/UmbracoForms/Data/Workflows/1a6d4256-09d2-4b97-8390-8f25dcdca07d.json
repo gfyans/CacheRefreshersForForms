@@ -1,0 +1,15 @@
+{
+  "id": "1a6d4256-09d2-4b97-8390-8f25dcdca07d",
+  "name": "greg@blackrted.co.uk",
+  "form": "2deb62a4-4df8-462a-aba3-a0b338b712c0",
+  "active": true,
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "greg@blackrted.co.uk",
+    "SenderEmail": "greg@blackrted.co.uk",
+    "Subject": "greg@blackrted.co.uk",
+    "Message": "greg@blackrted.co.uk"
+  },
+  "sortOrder": 0
+}

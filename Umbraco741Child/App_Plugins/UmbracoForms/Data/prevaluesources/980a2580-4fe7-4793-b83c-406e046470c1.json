@@ -1,0 +1,8 @@
+{
+  "id": "980a2580-4fe7-4793-b83c-406e046470c1",
+  "name": "Test",
+  "settings": {
+    "XPathExpression": "//"
+  },
+  "fieldPreValueSourceTypeId": "d2603882-e072-4915-86ce-175ac535bc43"
+}

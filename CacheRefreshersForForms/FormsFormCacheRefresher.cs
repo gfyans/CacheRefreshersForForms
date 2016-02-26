@@ -5,7 +5,6 @@ using System.Web.Script.Serialization;
 using Umbraco.Core.Cache;
 using Umbraco.Core.IO;
 using Umbraco.Forms.Core;
-using Umbraco.Forms.Core.Data;
 using Umbraco.Forms.Data.Storage;
 
 namespace CacheRefreshersForForms
@@ -13,7 +12,7 @@ namespace CacheRefreshersForForms
     public class FormsFormCacheRefresher : PayloadCacheRefresherBase<FormsFormCacheRefresher>
     {
         public const string Id = "74318b85-f97d-49af-ba15-caf9e0ba4d5a";
-        readonly BaseFileStorage<Form> _fileStorage = new FormStorage();
+        readonly FormStorage _formStorage = new FormStorage();
 
         protected override FormsFormCacheRefresher Instance => this;
         public override Guid UniqueIdentifier => new Guid(Id);
@@ -28,28 +27,28 @@ namespace CacheRefreshersForForms
         {
             Form form = (Form)payload;
 
-            string path = this.Find(form.Id.ToString());
+            string path = Find(form.Id.ToString(), _formStorage);
 
             if (path != null)
             {
-                _fileStorage.SaveToSpecificPath(form, form.Id.ToString(), path);
+                _formStorage.SaveToSpecificPath(form, form.Id.ToString(), path);
             }
             else
             {
-                _fileStorage.SaveToFile(form, form.Id, this.RootFolderPath());
+                _formStorage.SaveToFile(form, form.Id, RootFolderPath(_formStorage));
             }
 
             base.Refresh(payload);
         }
 
-        public string Find(string id)
+        public static string Find(string id, FormStorage fileStorage)
         {
-            return Directory.GetFiles(this.RootFolderPath(), id + "." + _fileStorage.Extension, SearchOption.AllDirectories).FirstOrDefault();
+            return Directory.GetFiles(RootFolderPath(fileStorage), id + "." + fileStorage.Extension, SearchOption.AllDirectories).FirstOrDefault();
         }
 
-        public string RootFolderPath()
+        public static string RootFolderPath(FormStorage fileStorage)
         {
-            return IOHelper.MapPath(Path.Combine(_fileStorage.Path, _fileStorage.Folder));
+            return IOHelper.MapPath(Path.Combine(fileStorage.Path, fileStorage.Folder));
         }
     }
 }

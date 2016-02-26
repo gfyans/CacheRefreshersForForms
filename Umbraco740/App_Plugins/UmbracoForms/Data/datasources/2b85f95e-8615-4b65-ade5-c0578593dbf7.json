@@ -1,0 +1,11 @@
+{
+  "id": "2b85f95e-8615-4b65-ade5-c0578593dbf7",
+  "name": "Test",
+  "settings": {
+    "DocType": "homepage",
+    "Parent": "1049",
+    "PublishOnSubmit": "True"
+  },
+  "formDataSourceTypeId": "f936bc32-3b54-4c32-8ca0-8c261564aa34",
+  "valid": false
+}
