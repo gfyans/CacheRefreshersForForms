@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>UmbracoFormsCacheRefreshers</id>
+    <version>1.0.3</version>
+    <title>Umbraco Forms Cache Refreshers for Flexible Load Balancing</title>
+    <authors>Greg Fyans</authors>
+    <owners>Greg Fyans</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://our.umbraco.org/projects/website-utilities/umbraco-forms-cache-refreshers-for-flexible-load-balancing/</projectUrl>
+    <iconUrl>https://www.placecage.com/200/200</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>These Cache Refreshers send your Form as a JSON payload to each instance connected to your DB.</description>
+    <releaseNotes>Fixed bug where saving workflows would duplicate workflow on master server/instance</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>umbraco forms</tags>
+  </metadata>
+</package>

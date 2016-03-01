@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using System.Web.Script.Serialization;
 using Umbraco.Core.Cache;
 using Umbraco.Forms.Core;

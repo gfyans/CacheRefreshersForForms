@@ -2,7 +2,6 @@
 using System.Web.Script.Serialization;
 using Umbraco.Core.Cache;
 using Umbraco.Forms.Core;
-using Umbraco.Forms.Core.Data;
 using Umbraco.Forms.Data.Storage;
 
 namespace CacheRefreshersForForms
